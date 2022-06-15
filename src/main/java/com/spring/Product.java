@@ -22,11 +22,10 @@ public class Product {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Product(int id, String name, String city) {
-		super();
+	public Product(int id, String firstname, String firstcity) {
 		this.id = id;
-		this.name = name;
-		this.city = city;
+		this.firstname = firstname;
+		this.firstcity = firstcity;
 	}
 
 	public int getId() {
@@ -37,27 +36,19 @@ public class Product {
 		this.id = id;
 	}
 
-	public String getName() {
-		return name;
+	public String getFirstname() {
+		return firstname;
 	}
 
-	public void setName(String name) {
-		this.name = name;
+	public void setFirstname(String firstname) {
+		this.firstname = firstname;
 	}
 
-	public String getCity() {
-		return city;
+	public String getFirstcity() {
+		return firstcity;
 	}
 
-	public void setCity(String city) {
-		this.city = city;
+	public void setFirstcity(String firstcity) {
+		this.firstcity = firstcity;
 	}
-
-	@Override
-	public String toString() {
-		return "Product [id=" + id + ", name=" + name + ", city=" + city + "]";
-	}
-	
-	
-	
 }
