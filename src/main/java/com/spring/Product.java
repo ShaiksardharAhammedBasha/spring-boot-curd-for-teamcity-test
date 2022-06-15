@@ -15,18 +15,18 @@ public class Product {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int id;
 	
-	private String first;
-	private String firstCity;
+	private String name;
+	private String city;
 	
 	public Product() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 
-	public Product(int id, String firstName, String firstCity) {
+	public Product(int id, String name, String city) {
 		this.id = id;
-		this.firstName = firstName;
-		this.firstCity = firstCity;
+		this.name = name;
+		this.city = city;
 	}
 
 	public int getId() {
@@ -37,29 +37,19 @@ public class Product {
 		this.id = id;
 	}
 
-	public String getFirstName() {
-		return firstName;
+	public String getName() {
+		return name;
 	}
 
-	public void setFirstName(String firstName) {
-		this.firstName = firstName;
+	public void setName(String name) {
+		this.name = name;
 	}
 
-	public String getFirstCity() {
-		return firstCity;
+	public String getCity() {
+		return city;
 	}
 
-	public void setFirstCity(String firstCity) {
-		this.firstCity = firstCity;
-	}
-
-	@Override
-	public String
-	toString() {
-		return "Product{" +
-				"id=" + id +
-				", firstName='" + firstName + '\'' +
-				", firstCity='" + firstCity + '\'' +
-				'}';
+	public void setCity(String city) {
+		this.city = city;
 	}
 }
