@@ -10,23 +10,23 @@ import javax.persistence.Table;
 @Table(name="pro_dec_12_32")
 public class Product {
 	
+	
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int id;
 	
-	private String name;
-	private String city;
+	private String firstName;
+	private String firstCity;
 	
 	public Product() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 
-	public Product(int id, String name, String city) {
-		super();
+	public Product(int id, String firstName, String firstCity) {
 		this.id = id;
-		this.name = name;
-		this.city = city;
+		this.firstName = firstName;
+		this.firstCity = firstCity;
 	}
 
 	public int getId() {
@@ -37,27 +37,29 @@ public class Product {
 		this.id = id;
 	}
 
-	public String getName() {
-		return name;
+	public String getFirstName() {
+		return firstName;
 	}
 
-	public void setName(String name) {
-		this.name = name;
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
 	}
 
-	public String getCity() {
-		return city;
+	public String getFirstCity() {
+		return firstCity;
 	}
 
-	public void setCity(String city) {
-		this.city = city;
+	public void setFirstCity(String firstCity) {
+		this.firstCity = firstCity;
 	}
 
 	@Override
-	public String toString() {
-		return "Product [id=" + id + ", name=" + name + ", city=" + city + "]";
+	public String
+	toString() {
+		return "Product{" +
+				"id=" + id +
+				", firstName='" + firstName + '\'' +
+				", firstCity='" + firstCity + '\'' +
+				'}';
 	}
-	
-	
-	
 }
