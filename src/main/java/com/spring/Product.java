@@ -15,7 +15,7 @@ public class Product {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int id;
 	
-	private String firstName;
+	private String first;
 	private String firstCity;
 	
 	public Product() {
