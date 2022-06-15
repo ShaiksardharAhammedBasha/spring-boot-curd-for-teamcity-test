@@ -7,15 +7,15 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="pro_dec_12_32")
+@Table(name="pro_June_06_15")
 public class Product {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int id;
 	
-	private String name;
-	private String city;
+	private String firstname;
+	private String firstcity;
 	
 	public Product() {
 		super();
